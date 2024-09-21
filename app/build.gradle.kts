@@ -6,18 +6,17 @@ plugins {
 android {
     namespace = "com.netlifymanjot.wavesoffoodadmin"
     compileSdk = 34
-
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.netlifymanjot.wavesoffoodadmin"
-        minSdk = 16
+        minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-    buildFeatures {
-        viewBinding = true
     }
 
     buildTypes {

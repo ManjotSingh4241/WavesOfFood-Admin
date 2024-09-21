@@ -7,12 +7,14 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.netlifymanjot.wavesoffoodadmin.databinding.ActivityLoginBinding
+import com.netlifymanjot.wavesoffoodadmin.databinding.ActivityLogInBinding
 
 class LoginActivity : AppCompatActivity() {
-    private val binding: ActivityLoginBinding by lazy {
-        ActivityLoginBinding.inflate(layoutInflater)
+
+    private val binding: ActivityLogInBinding by lazy{
+        ActivityLogInBinding.inflate(layoutInflater)
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
