@@ -25,5 +25,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AllItemActivity::class.java)
             startActivity(intent)
         }
+        binding.outForDeliveryButton.setOnClickListener{
+            val intent = Intent(this, OutForDeliveryActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
