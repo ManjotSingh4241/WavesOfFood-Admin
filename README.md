@@ -1,6 +1,8 @@
-This update introduces the All Item tab in the admin panel of the "Waves of Food" app. The tab provides a simple interface for viewing and managing food items, allowing admins to update quantities, prices, and images. This feature enhances the functionality and user experience for managing the food menu efficiently.
+Day 11 of Waves of Food development, focusing on Day 4 of the admin panel. Added a key feature: "Out For Delivery" tab with real-time order and payment tracking. Orders can now display payment status in colors (Received, Not Received, Pending). This feature ensures admins have easy access to customer information, payment updates, and delivery statuses.
 
-![image](https://github.com/user-attachments/assets/da85ed32-99a2-46b4-9713-8798b589788f)
+
+![image](https://github.com/user-attachments/assets/cf15890b-fabe-4e59-9378-fc09aae323b9)
+
 
 
 
