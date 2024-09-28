@@ -10,14 +10,17 @@ import com.netlifymanjot.wavesoffoodadmin.adapter.DeliveryAdapter
 import com.netlifymanjot.wavesoffoodadmin.databinding.ActivityOutForDeliveryBinding
 
 class OutForDeliveryActivity : AppCompatActivity() {
-    private val binding: ActivityOutForDeliveryBinding by lazy{
+    private val binding: ActivityOutForDeliveryBinding by lazy {
         ActivityOutForDeliveryBinding.inflate(layoutInflater)
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
-
+        binding.backButton.setOnClickListener {
+            finish()
+        }
         val customerName = arrayListOf(
             "Manjot Singh",
             "Jot",
