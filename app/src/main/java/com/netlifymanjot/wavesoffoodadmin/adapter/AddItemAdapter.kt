@@ -30,7 +30,7 @@ class AddItemAdapter(
         fun bind(position: Int) {
             binding.apply {
                 val quantity = itemQuantities[position]
-                foodnameTextView.text = MenuItemName[position]
+                foodNameTextView.text = MenuItemName[position]
                 PriceTextView.text = MenuItemPrice[position]
                 foodmageView.setImageResource(MenuItemImage[position])
                 quantityTextView.text = quantity.toString()

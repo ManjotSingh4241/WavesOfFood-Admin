@@ -13,6 +13,9 @@
         android:theme="@style/Theme.WavesOfFoodAdmin"
         tools:targetApi="31">
         <activity
+            android:name=".PendingOrderActivity"
+            android:exported="false" />
+        <activity
             android:name=".CreateUserActivity"
             android:exported="false" />
         <activity
@@ -32,19 +35,19 @@
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SplashScreenActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            >
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
         </activity>
 
         <meta-data

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "947124013247",
+    "project_id": "wavesoffood-f3944",
+    "storage_bucket": "wavesoffood-f3944.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947124013247:android:f375b2bb2d188f16b95e0a",
+        "android_client_info": {
+          "package_name": "com.netlifymanjot.wavesoffoodadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD13rqyq5W7tmwpgi7pU1eK0ZczE6bF4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

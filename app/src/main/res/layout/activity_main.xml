@@ -79,7 +79,7 @@
                 app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
             <TextView
-                android:id="@+id/pendingOrders1"
+                android:id="@+id/pendingOrderTexrView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/yeon_sung"
@@ -99,9 +99,9 @@
                 android:text="30"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/pendingOrders1"
+                app:layout_constraintEnd_toEndOf="@+id/pendingOrderTexrView"
                 app:layout_constraintStart_toStartOf="@+id/guideline3"
-                app:layout_constraintTop_toBottomOf="@+id/pendingOrders1" />
+                app:layout_constraintTop_toBottomOf="@+id/pendingOrderTexrView" />
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -306,7 +306,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView7"
+        android:id="@+id/createUser"
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:outlineSpotShadowColor="@color/textColor"
@@ -352,7 +352,7 @@
         android:layout_marginTop="16dp"
         android:outlineSpotShadowColor="@color/textColor"
         app:cardCornerRadius="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/cardView7"
+        app:layout_constraintEnd_toStartOf="@+id/createUser"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView3" >
