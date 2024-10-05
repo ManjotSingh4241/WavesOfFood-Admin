@@ -14,6 +14,7 @@ import com.google.firebase.auth.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.database
 import com.netlifymanjot.wavesoffoodadmin.databinding.ActivitySignUpBinding
+import com.netlifymanjot.wavesoffoodadmin.model.UserModel
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -31,7 +32,6 @@ class SignUpActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        FirebaseApp.initializeApp(this)
         enableEdgeToEdge()
         auth = Firebase.auth
         database = Firebase.database.reference
@@ -55,9 +55,6 @@ class SignUpActivity : AppCompatActivity() {
             } else {
                 createAccount(email, password)
             }
-
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
         }
         binding.alreadyhavebutton.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
@@ -69,6 +66,7 @@ class SignUpActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 Toast.makeText(this, "Account Created", Toast.LENGTH_SHORT).show()
+                saveUserData()
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
                 finish()
@@ -78,5 +76,15 @@ class SignUpActivity : AppCompatActivity() {
                 Log.d("Account", "createAccountFailure: Failure", task.exception)
             }
         }
+    }
+
+    private fun saveUserData() {
+        email = binding.emailOrPhone.text.toString().trim()
+        userName = binding.name.text.toString().trim()
+        nameOfRestaurant = binding.restaurantName.text.toString().trim()
+        password = binding.password.text.toString().trim()
+        val user = UserModel(userName, nameOfRestaurant, email, password)
+        val userId = FirebaseAuth.getInstance().currentUser!!.uid
+        database.child("user").child(userId).setValue(user)
     }
 }

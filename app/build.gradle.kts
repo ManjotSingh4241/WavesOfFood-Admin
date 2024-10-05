@@ -1,7 +1,10 @@
+//import org.jetbrains.kotlin.gradle.internal.kapt.incremental.UnknownSnapshot.classpath
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("com.google.gms.google-services") version "4.4.2" apply false
+    id("com.google.gms.google-services") version "4.4.2"
+//    id ("com.android.application")
 }
 
 android {
@@ -47,6 +50,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
+//    classpath ("com.google.gms:google-services:4.3.15")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
