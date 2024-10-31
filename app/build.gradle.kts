@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("com.google.gms.google-services") version "4.4.2"
+
 //    id ("com.android.application")
 }
 
@@ -50,11 +51,16 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
+    implementation(libs.firebase.storage)
 //    classpath ("com.google.gms:google-services:4.3.15")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(platform("com.google.firebase:firebase-bom:33.4.0"))
     implementation("com.google.firebase:firebase-analytics")
+    implementation ("com.google.android.gms:play-services-auth:16.0.1")
+    implementation ("com.google.android.gms:play-services-games:17.0.0")
+
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
 
 }

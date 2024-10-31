@@ -47,7 +47,7 @@
                 app:layout_constraintTop_toTopOf="@+id/backButton" />
 
             <EditText
-                android:id="@+id/enterFoodName"
+                android:id="@+id/foodName"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginStart="8dp"
@@ -68,7 +68,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
             <EditText
-                android:id="@+id/enterFoodPrice"
+                android:id="@+id/foodPrice"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="24dp"
@@ -80,9 +80,9 @@
                 android:outlineSpotShadowColor="@color/textColor"
                 android:paddingLeft="15dp"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/enterFoodName"
-                app:layout_constraintStart_toStartOf="@+id/enterFoodName"
-                app:layout_constraintTop_toBottomOf="@+id/enterFoodName" />
+                app:layout_constraintEnd_toEndOf="@+id/foodName"
+                app:layout_constraintStart_toStartOf="@+id/foodName"
+                app:layout_constraintTop_toBottomOf="@+id/foodName" />
 
             <TextView
                 android:id="@+id/selectImage"
@@ -98,9 +98,9 @@
                 android:paddingRight="15dp"
                 android:text="Select Image"
                 android:textColor="@color/black"
-                app:layout_constraintEnd_toEndOf="@+id/enterFoodPrice"
-                app:layout_constraintStart_toStartOf="@+id/enterFoodPrice"
-                app:layout_constraintTop_toBottomOf="@+id/enterFoodPrice" />
+                app:layout_constraintEnd_toEndOf="@+id/foodPrice"
+                app:layout_constraintStart_toStartOf="@+id/foodPrice"
+                app:layout_constraintTop_toBottomOf="@+id/foodPrice" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView8"
@@ -121,7 +121,7 @@
             </androidx.cardview.widget.CardView>
 
             <TextView
-                android:id="@+id/shortDesccription"
+                android:id="@+id/desccription"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_marginStart="8dp"
@@ -144,12 +144,12 @@
                 android:layout_marginTop="4dp"
                 android:background="@color/white"
                 android:fontFamily="@font/lato_bold"
-                android:text="#3 of our Admin Panel series for creating a Food Ordering App in Android Studio! In this video, you will learn the process of "
+                android:hint="Add Item Description"
                 android:textColor="@color/black"
-                app:layout_constraintEnd_toEndOf="@+id/shortDesccription"
+                app:layout_constraintEnd_toEndOf="@+id/desccription"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/shortDesccription"
-                app:layout_constraintTop_toBottomOf="@+id/shortDesccription" />
+                app:layout_constraintStart_toStartOf="@+id/desccription"
+                app:layout_constraintTop_toBottomOf="@+id/desccription" />
 
             <TextView
                 android:id="@+id/shortDesccription1"
@@ -162,7 +162,7 @@
                 android:fontFamily="@font/yeon_sung"
                 android:gravity="center_vertical"
                 android:paddingLeft="15dp"
-                android:text="Short Description"
+                android:text="Ingredients"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/description"
                 app:layout_constraintStart_toStartOf="@+id/description"
@@ -175,7 +175,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@color/white"
                 android:fontFamily="@font/lato_bold"
-                android:text="#3 of our Admin Panel series for "
+                android:hint="Add Ingredients"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@+id/shortDesccription1"
                 app:layout_constraintHorizontal_bias="0.388"
